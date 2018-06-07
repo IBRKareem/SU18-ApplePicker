@@ -214,6 +214,7 @@ MonoBehaviour:
   numBaskets: 3
   basketBottomY: -14
   basketSpacingY: 2
+  basketList: []
 --- !u!1 &413452668
 GameObject:
   m_ObjectHideFlags: 0
@@ -571,7 +572,7 @@ Prefab:
     - target: {fileID: 114165834479692848, guid: 6d4ac1dca82d0d74fb2ec6cab3a8d1da,
         type: 2}
       propertyPath: speed
-      value: 10
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 114165834479692848, guid: 6d4ac1dca82d0d74fb2ec6cab3a8d1da,
         type: 2}
@@ -589,6 +590,11 @@ Prefab:
       propertyPath: m_IsKinematic
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114165834479692848, guid: 6d4ac1dca82d0d74fb2ec6cab3a8d1da,
+        type: 2}
+      propertyPath: secondsBetweenAppleDrops
+      value: 0.3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6d4ac1dca82d0d74fb2ec6cab3a8d1da, type: 2}
   m_IsPrefabParent: 0
@@ -602,6 +608,7 @@ GameObject:
   - component: {fileID: 2142715436}
   - component: {fileID: 2142715438}
   - component: {fileID: 2142715437}
+  - component: {fileID: 2142715439}
   m_Layer: 5
   m_Name: HighScore
   m_TagString: Untagged
@@ -666,3 +673,14 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2142715435}
+--- !u!114 &2142715439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2142715435}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a541154bed67cc4bba341a81c597468, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
